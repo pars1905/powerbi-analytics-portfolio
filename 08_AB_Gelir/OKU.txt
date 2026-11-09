@@ -1,0 +1,15 @@
+SENTETİK promosyon ekonomisi
+
+Bu PBIP proje taslağı, Windows Power BI Desktop'ta henüz açılıp doğrulanmadı.
+Kullanıcının talebiyle Desktop'a aktarım/açılış sonraki aşamaya bırakıldı.
+
+Sonraki aşama:
+1. 08_AB_Gelir.pbip dosyasını güncel Windows Power BI Desktop ile aç.
+2. Home > Refresh ile gömülü snapshot'ı yükle. CSV yolu/API anahtarı gerekmez.
+3. CHECKS.json değerleri, kartlar, tablo toplamları ve etkileşimleri kontrol et.
+4. Başarıyla doğrulandıktan sonra .pbix kaydet; yayın, GitHub ve CV ayrı aşamadır.
+
+Kaynak: 08_ab_revenue/analysis.py sentetik verisi; Welch ve kullanıcı bootstrap çıktıları.
+Kapsam/sınır: Örnek karar: yayına geçme. Gelir artışı katkı düşüşünü telafi etmiyor. Katkı guardrail alt GA sınırı > -0.20 şartı geçmedi; maliyetler varsayımsal.
+Ayrıntılar: RAPOR_KARTI.md. Kaynak tablolar: data/.
+Bu rapor analizleri yeniden çalıştırmaz; gömülü sonuç snapshot'ını yükler.

@@ -1,0 +1,1 @@
+{"schema_checks":["PBIP","PBIR","PBISM"],"visual_bindings_valid":true,"geometry_valid":true,"embedded_rows_roundtrip":true,"power_bi_desktop_opened":false,"dax_executed":false,"power_bi_service_published":false,"expected":{"all_customers":4338,"observable_customers":3974,"weighted_retention":0.2365374937091092}}

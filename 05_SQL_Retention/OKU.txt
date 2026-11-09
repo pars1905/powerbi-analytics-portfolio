@@ -1,0 +1,15 @@
+SQL kohort ve retention
+
+Bu PBIP proje taslağı, Windows Power BI Desktop'ta henüz açılıp doğrulanmadı.
+Kullanıcının talebiyle Desktop'a aktarım/açılış sonraki aşamaya bırakıldı.
+
+Sonraki aşama:
+1. 05_SQL_Retention.pbip dosyasını güncel Windows Power BI Desktop ile aç.
+2. Home > Refresh ile gömülü snapshot'ı yükle. CSV yolu/API anahtarı gerekmez.
+3. CHECKS.json değerleri, kartlar, tablo toplamları ve etkileşimleri kontrol et.
+4. Başarıyla doğrulandıktan sonra .pbix kaydet; yayın, GitHub ve CV ayrı aşamadır.
+
+Kaynak: UCI Online Retail; 05_sql_retention/query.sql çıktısı.
+Kapsam/sınır: 2010 Aralık sol sansürlü olabilir. Kasım/Aralık 2011 M1 gözlemi yetersiz; NULL, sıfır değildir. İlk gözlenen alışveriş gerçek ilk alışveriş olmayabilir.
+Ayrıntılar: RAPOR_KARTI.md. Kaynak tablolar: data/.
+Bu rapor analizleri yeniden çalıştırmaz; gömülü sonuç snapshot'ını yükler.

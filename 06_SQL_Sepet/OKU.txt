@@ -1,0 +1,15 @@
+SQL ürün birlikteliği
+
+Bu PBIP proje taslağı, Windows Power BI Desktop'ta henüz açılıp doğrulanmadı.
+Kullanıcının talebiyle Desktop'a aktarım/açılış sonraki aşamaya bırakıldı.
+
+Sonraki aşama:
+1. 06_SQL_Sepet.pbip dosyasını güncel Windows Power BI Desktop ile aç.
+2. Home > Refresh ile gömülü snapshot'ı yükle. CSV yolu/API anahtarı gerekmez.
+3. CHECKS.json değerleri, kartlar, tablo toplamları ve etkileşimleri kontrol et.
+4. Başarıyla doğrulandıktan sonra .pbix kaydet; yayın, GitHub ve CV ayrı aşamadır.
+
+Kaynak: UCI Online Retail; 06_sql_basket/query.sql. Tam 1770 satır orijinal analizde korunur.
+Kapsam/sınır: Çiftler örtüşür; pair_orders toplamı tekil fatura değildir. Lift, önerinin yaratacağı artışı kanıtlamaz. İlk 30 seçimi bu snapshot için sabittir.
+Ayrıntılar: RAPOR_KARTI.md. Kaynak tablolar: data/.
+Bu rapor analizleri yeniden çalıştırmaz; gömülü sonuç snapshot'ını yükler.

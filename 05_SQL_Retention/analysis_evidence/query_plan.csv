@@ -1,0 +1,12 @@
+id,parent,notused,detail
+2,0,0,CO-ROUTINE sizes
+4,2,0,CO-ROUTINE first_purchase
+11,4,223,SEARCH invoices USING INDEX ix_invoices_customer_date (customer>?)
+47,2,0,MATERIALIZE activity
+52,47,223,SEARCH invoices USING INDEX ix_invoices_customer_date (customer>?)
+66,47,0,USE TEMP B-TREE FOR DISTINCT
+72,2,82,SCAN f
+86,2,52,SEARCH a USING AUTOMATIC COVERING INDEX (customer=? AND month=?) LEFT-JOIN
+104,2,0,USE TEMP B-TREE FOR GROUP BY
+160,0,82,SCAN sizes
+187,0,0,USE TEMP B-TREE FOR ORDER BY

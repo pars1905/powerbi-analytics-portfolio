@@ -1,0 +1,20 @@
+{
+  "n": 6000,
+  "bad_rate": 0.22116666666666668,
+  "roc_auc": 0.7618465423150291,
+  "pr_auc_average_precision": 0.5274832232680755,
+  "brier": 0.13817037358476314,
+  "log_loss": 0.44060478545290305,
+  "uncalibrated_brier": 0.13813571156310997,
+  "calibration_fit_n": 3000,
+  "policy_validation_n": 3000,
+  "review_threshold": 0.16999999999999996,
+  "test_review_rate": 0.38066666666666665,
+  "test_cost_proxy_per_customer": 0.5985,
+  "no_review_cost": 1.1058333333333334,
+  "review_everyone_cost": 0.7788333333333333,
+  "stress_scenario_mean_pd": 0.34913552623944216,
+  "base_mean_pd": 0.21802517125723594,
+  "stress_scenario_review_rate": 0.9171666666666667,
+  "stress_unseen_pay0_rate": 0.0006666666666666666
+}

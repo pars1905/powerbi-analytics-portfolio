@@ -1,0 +1,15 @@
+SENTETİK checkout A/B
+
+Bu PBIP proje taslağı, Windows Power BI Desktop'ta henüz açılıp doğrulanmadı.
+Kullanıcının talebiyle Desktop'a aktarım/açılış sonraki aşamaya bırakıldı.
+
+Sonraki aşama:
+1. 07_AB_Donusum.pbip dosyasını güncel Windows Power BI Desktop ile aç.
+2. Home > Refresh ile gömülü snapshot'ı yükle. CSV yolu/API anahtarı gerekmez.
+3. CHECKS.json değerleri, kartlar, tablo toplamları ve etkileşimleri kontrol et.
+4. Başarıyla doğrulandıktan sonra .pbix kaydet; yayın, GitHub ve CV ayrı aşamadır.
+
+Kaynak: 07_ab_conversion/analysis.py sabit seed ile üretilen sentetik kullanıcılar.
+Kapsam/sınır: GA ve SRM sabit deney popülasyonuna aittir. İstatistiksel artış tek başına kâr ve hata guardrail şartlarını sağlamaz.
+Ayrıntılar: RAPOR_KARTI.md. Kaynak tablolar: data/.
+Bu rapor analizleri yeniden çalıştırmaz; gömülü sonuç snapshot'ını yükler.

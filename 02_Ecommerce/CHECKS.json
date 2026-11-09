@@ -1,0 +1,1 @@
+{"schema_checks":["PBIP","PBIR","PBISM"],"visual_bindings_valid":true,"geometry_valid":true,"embedded_rows_roundtrip":true,"power_bi_desktop_opened":false,"dax_executed":false,"power_bi_service_published":false,"expected":{"revenue_gbp":9182867.744,"orders":17582,"aov_gbp":522.288007280173}}

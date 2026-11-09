@@ -1,0 +1,1 @@
+{"schema_checks":["PBIP","PBIR","PBISM"],"visual_bindings_valid":true,"geometry_valid":true,"embedded_rows_roundtrip":true,"power_bi_desktop_opened":false,"dax_executed":false,"power_bi_service_published":false,"expected":{"test_auc":0.7618465423150291,"auc_ci95":[0.74614193625619,0.7765320337245355],"test_brier":0.13813571156310997,"test_n":6000,"threshold":0.16999999999999998}}

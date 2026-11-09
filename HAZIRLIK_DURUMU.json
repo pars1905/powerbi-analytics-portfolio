@@ -1,0 +1,99 @@
+{
+  "stage": "12_pbip_drafts_ready_desktop_import_deferred",
+  "desktop_validated": false,
+  "service_published": false,
+  "github_pushed": false,
+  "cv_updated": false,
+  "remaining_projects": [
+    {
+      "slug": "04_SQL_Buyume",
+      "title": "SQL satış büyümesi",
+      "tables": {
+        "Growth": 261
+      },
+      "desktop_validated": false
+    },
+    {
+      "slug": "05_SQL_Retention",
+      "title": "SQL kohort ve retention",
+      "tables": {
+        "Cohorts": 13
+      },
+      "desktop_validated": false
+    },
+    {
+      "slug": "06_SQL_Sepet",
+      "title": "SQL ürün birlikteliği",
+      "tables": {
+        "Pairs": 30
+      },
+      "desktop_validated": false
+    },
+    {
+      "slug": "07_AB_Donusum",
+      "title": "SENTETİK checkout A/B",
+      "tables": {
+        "Groups": 2,
+        "Effects": 1,
+        "Plan": 1
+      },
+      "desktop_validated": false
+    },
+    {
+      "slug": "08_AB_Gelir",
+      "title": "SENTETİK promosyon ekonomisi",
+      "tables": {
+        "Groups": 2,
+        "Effects": 2,
+        "Plan": 1
+      },
+      "desktop_validated": false
+    },
+    {
+      "slug": "09_AB_CUPED",
+      "title": "SENTETİK CUPED hassasiyeti",
+      "tables": {
+        "Effects": 2,
+        "Plan": 1
+      },
+      "desktop_validated": false
+    },
+    {
+      "slug": "10_Risk_German",
+      "title": "German Credit lojistik risk",
+      "tables": {
+        "Metrics": 1,
+        "Calibration": 8,
+        "Importance": 8,
+        "Confusion": 2
+      },
+      "desktop_validated": false
+    },
+    {
+      "slug": "11_Risk_Taiwan",
+      "title": "Taiwan davranışsal kredi riski",
+      "tables": {
+        "Metrics": 1,
+        "Calibration": 8,
+        "Importance": 8,
+        "Confusion": 2
+      },
+      "desktop_validated": false
+    },
+    {
+      "slug": "12_Risk_Politika",
+      "title": "Risk politikası ve stres",
+      "tables": {
+        "Summary": 1,
+        "Policy": 69,
+        "Scenarios": 2,
+        "Costs": 3,
+        "Calibration": 8,
+        "Audit": 2
+      },
+      "desktop_validated": false
+    }
+  ],
+  "desktop_open_observed": "01_Makro report load failure reported 2026-11-09; event id f3091aa7-fe7c-4b21-9503-fdb4b3043b00",
+  "power_bi_native_status": "generated PBIP failed to load on user Windows Desktop; do not claim validated"
+}

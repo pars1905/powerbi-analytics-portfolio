@@ -1,0 +1,19 @@
+12 Power BI proje taslağı — toplu hazırlık
+
+01 Makro, 02 Ecommerce, 03 RFM
+04 SQL büyüme, 05 SQL retention, 06 SQL sepet
+07 SENTETİK dönüşüm A/B, 08 SENTETİK gelir A/B, 09 SENTETİK CUPED
+10 German risk, 11 Taiwan risk, 12 Risk politikası
+
+Kullanıcının talebi: şimdi hepsi hazırlansın; daha sonra Power BI'a birlikte eklensin.
+Bu aşamada Desktop'a aktarım, .pbix kaydı, Service yayını, GitHub ve CV yapılmadı.
+PBIP/PBIR/PBISM JSON şemaları ve alan bağlantıları denetlendi. Desktop/M/DAX/render doğrulaması yapılmadı.
+Veriler gömülü analiz snapshot'larıdır; data/ klasörlerinde CSV kopyaları bulunur.
+Refresh, SQL/deney/model analizlerini yeniden çalıştırmaz.
+06: 1770 aday içinden sabit ilk 30 ürün çifti raporlanır.
+07–09: gerçek kampanya değil, sentetik deney raporlarıdır; GA tabloları korunur.
+10–12: tarihsel eğitim modelleridir. 12, 11'in aynı veri seti üzerine politika katmanıdır.
+
+Daha sonra 01'den başlayarak güncel Windows Power BI Desktop'ta ilgili .pbip açılır,
+Refresh yapılır, kartlar CHECKS.json ile karşılaştırılır, etkileşimler denenir.
+Başarılı doğrulamadan sonra .pbix kaydedilir; GitHub ve CV son aşamadır.

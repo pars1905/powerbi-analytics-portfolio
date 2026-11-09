@@ -1,0 +1,25 @@
+{
+  "n": 200,
+  "bad_rate": 0.3,
+  "roc_auc": 0.7990476190476191,
+  "pr_auc_average_precision": 0.6467161687425897,
+  "brier": 0.16030618342553743,
+  "log_loss": 0.4867545122558083,
+  "source": "UCI German",
+  "train_n": 600,
+  "valid_n": 200,
+  "best_C_train_cv": 0.1,
+  "threshold_validation_cost_fn5_fp1": 0.21999999999999997,
+  "test_confusion_matrix_tn_fp_fn_tp": [
+    69,
+    71,
+    6,
+    54
+  ],
+  "roc_auc_ci95_bootstrap": [
+    0.7336076390205071,
+    0.8615498090745732
+  ],
+  "nonzero_transformed_features": 54,
+  "baseline_train_prevalence_brier": 0.20999999999999996
+}

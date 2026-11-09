@@ -1,0 +1,17 @@
+Türkiye makro göstergeleri
+
+Durum: Power BI PBIP taslağı. Windows Desktop'ta açılıp doğrulanmadı.
+JSON şemaları, kolon/ölçü bağları, gömülü veri ve yerleşim sınırları denetlendi.
+Görsellerin render edilmesi, DAX ve M çalışma zamanı doğrulaması Desktop'ta yapılmalıdır.
+
+1. Bu klasördeki 01_Makro.pbip dosyasını güncel Power BI Desktop ile aç.
+2. Gerekirse Options > Preview features içinde Power BI Project kaydını etkinleştir ve yeniden başlat.
+3. Home > Refresh ile gömülü snapshot'ı yükle. Dosya yolu, API anahtarı ve internet gerekmez.
+4. CHECKS.json içindeki beklenen sayıları kartlarla karşılaştır; slicer/çapraz filtreleri dene.
+5. Başarıyla açıldıktan sonra Save As > .pbix ile kaydet. Ardından Service'e Publish yapılabilir.
+
+Rapor içindeki veriler 8 Kasım 2026 tarihinde edinilen açık veri snapshot'ıdır.
+RFM raporu yalnızca segment ve recency bandı özetlerini içerir; tekil müşteri listesi yoktur.
+Bu bir Power BI Desktop ekran görüntüsü veya tamamlanmış Service yayını değildir.
+Kaynaklar: World Bank WDI; UCI Online Retail (Daqing Chen, DOI 10.24432/C5BW33, CC BY 4.0).
+Rapor yapısı Microsoft PBIP belgeleri ve microsoft/fabric-samples rapor örneği incelenerek hazırlanmıştır.

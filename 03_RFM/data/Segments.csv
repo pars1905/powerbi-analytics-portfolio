@@ -1,0 +1,5 @@
+segment,customers,revenue_gbp,median_recency
+loyal_active,1164,5827865.41,11.0
+one_time,1493,613989.561,132.0
+other,1396,1983509.183,55.0
+winback_candidate,285,461844.74,139.0

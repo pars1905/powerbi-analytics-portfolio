@@ -1,0 +1,13 @@
+{
+  "latest_common_year": 2025,
+  "latest_common_values_percent": {
+    "gdp_growth": 3.60462514082589,
+    "inflation": 34.8811700293777,
+    "unemployment": 8.52
+  },
+  "latest_available_by_indicator": {
+    "gdp_growth": 2025,
+    "inflation": 2025,
+    "unemployment": 2025
+  }
+}

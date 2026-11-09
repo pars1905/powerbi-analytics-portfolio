@@ -1,0 +1,22 @@
+{
+  "explicit_indexes": {
+    "seconds_three_warm_runs": [
+      0.006900959999939005,
+      0.006915720999927544,
+      0.00751874900004168
+    ],
+    "median_seconds": 0.006915720999927544,
+    "rows": 261
+  },
+  "no_explicit_indexes": {
+    "seconds_three_warm_runs": [
+      0.007772992000013801,
+      0.007699502000036773,
+      0.012948934000064583
+    ],
+    "median_seconds": 0.007772992000013801,
+    "rows": 261
+  },
+  "equivalent_results": true,
+  "scope": "Local RAM copy, warm runs, explicit indexes first, auto indexes on; not a production benchmark."
+}

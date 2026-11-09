@@ -1,0 +1,19 @@
+{
+  "data_type": "SIMULATED",
+  "seed": 20261108,
+  "planned_n_per_arm": 14751,
+  "alpha": 0.05,
+  "power": 0.8,
+  "mde_absolute": 0.01,
+  "control_n": 14794,
+  "treatment_n": 14708,
+  "control_rate": 0.10375828038393943,
+  "treatment_rate": 0.1153113951590971,
+  "delta_pp": 1.1553114775157662,
+  "ci95_pp": [
+    0.4426196695265764,
+    1.8680032855049564
+  ],
+  "p_value": 0.0014873033511413492,
+  "srm_p": 0.6165862239107078
+}
