@@ -1,17 +1,25 @@
-# SQL satış büyümesi
+# 📊 04_SQL_Buyume — SQL satış büyümesi
 
-**Durum:** Power BI proje taslağı. Power BI Desktop'ta açılmadı; M/DAX ve görseller çalışma zamanında doğrulanmadı.
+![04_SQL_Buyume Power BI Dashboard Görseli](dashboard.png)
 
-**Kapsam:** UCI • Ocak–Kasım 2011 • CTE, JOIN, LAG ve DENSE_RANK sonuç görünümü.
+## 📌 Proje Özeti ve KPI Doğrulaması (`CHECKS.json` & `RESULTS.md`)
+- **Veri Kaynağı ve Kapsam:** UCI Online Retail SQLite (13 Ay)
+- **Temel KPI ve Doğrulama Bulgusu:** 2010-12 – 2011-12 (13 ay) toplam 9,749,138.20 GBP ciro; zirve ay 2011-11 (1,461,756.24 GBP); 261 satır (0.009 sn).
+- **Analitik Karar Kuralı:** Ülke payını aylık değişimle birlikte izle; tek pazar yoğunlaşmasını azaltmak için ülke bazlı kâr ve edinim maliyeti gerekir.
 
-**Kaynak:** UCI Online Retail; 04_sql_growth/query.sql SQLite çıktısı. BigQuery uzantısı çalıştırılmadı.
+## 📈 Etkileşimli Grafik Görünümü (GitHub Mermaid)
 
-**Yorum ve sınır:** Payda aynı dönemde tüm ülkelerdir. Tek çalışma ve yerel indeks karşılaştırması üretim performansı iddiası değildir.
+```mermaid
+xychart-beta
+    title "04_SQL_Buyume: Donemsel Ciro Kiyaslamasi (Bin GBP)"
+    x-axis ["2011-01 UK Cirosu", "13 Aylik Ortalama", "2011-11 Zirve Ay"]
+    y-axis "Ciro (Bin GBP)" 0 --> 1600
+    bar [560, 750, 1462]
+```
 
-Modeldeki veriler analiz sonuçlarının gömülü snapshot'ıdır. Refresh analizi/SQL'i/deneyi/modeli yeniden çalıştırmaz. Güncelleme için kaynak analiz yeniden çalıştırılıp rapor yeniden üretilmelidir.
-
-`data/` klasöründe modele aktarılan tablolar vardır. `CHECKS.json` beklenen kart değerlerini ve yapılan kontrolleri içerir. Snapshot değerleri rapor filtreleriyle aynı popülasyonda karşılaştırılmalıdır.
-
-Önceki analiz ve kaynak kodu: `04_sql_growth/`.
-
-Belirsizlik içeren raporlarda %95 güven aralıkları ilgili tablolarda görünür. Sentetik raporlar gerçek kampanya etkisi değildir. Eşik/kalibrasyon tabloları önceden hesaplanmıştır; rapor içinde model eğitimi veya yeniden test yapılmaz.
+## 📁 Klasör Bileşenleri
+- `dashboard.png`: Yüksek çözünürlüklü Power BI gösterge paneli çıktısı
+- `data/`: Modele aktarılan CSV veri tabloları
+- `analysis_evidence/`: `METHOD.md`, `RESULTS.md` ve `summary.json` kanıt dosyaları
+- `CHECKS.json`: Beklenen KPI kart değerleri ve şema doğrulama sonuçları
+- `04_SQL_Buyume.pbip`, `04_SQL_Buyume.Report/`, `04_SQL_Buyume.SemanticModel/`: Power BI proje ve veri modeli dosyaları
