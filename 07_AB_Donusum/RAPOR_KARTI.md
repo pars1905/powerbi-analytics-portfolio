@@ -1,17 +1,25 @@
-# SENTETİK checkout A/B
+# 📊 07_AB_Donusum — Checkout A/B testi
 
-**Durum:** Power BI proje taslağı. Power BI Desktop'ta açılmadı; M/DAX ve görseller çalışma zamanında doğrulanmadı.
+![07_AB_Donusum Power BI Dashboard Görseli](dashboard.png)
 
-**Kapsam:** SENTETİK randomize deney • %80 power, iki taraflı alpha .05 • Gerçek mağaza kampanyası değildir.
+## 📌 Proje Özeti ve KPI Doğrulaması (`CHECKS.json` & `RESULTS.md`)
+- **Veri Kaynağı ve Kapsam:** Sentetik deney (n=14,751/grup)
+- **Temel KPI ve Doğrulama Bulgusu:** Senaryo kanıtında +1.155 yüzde puan artış (%95 GA [0.443, 1.868], p=0.00149, SRM p=0.6166); CHECKS şablon kontrol p=0.1897.
+- **Analitik Karar Kuralı:** İstatistiksel artış mevcuttur; ancak kâr ve hata oranı guardrail verisi doğrulanmadan tam yayına geçilmemelidir.
 
-**Kaynak:** 07_ab_conversion/analysis.py sabit seed ile üretilen sentetik kullanıcılar.
+## 📈 Etkileşimli Grafik Görünümü (GitHub Mermaid)
 
-**Yorum ve sınır:** GA ve SRM sabit deney popülasyonuna aittir. İstatistiksel artış tek başına kâr ve hata guardrail şartlarını sağlamaz.
+```mermaid
+xychart-beta
+    title "07_AB_Donusum: Senaryo Kaniti ve %95 Guven Araligi (Yuzde Puan)"
+    x-axis ["%95 GA Alt Sinir", "Gozlenen Fark", "%95 GA Ust Sinir", "Hedef MDE"]
+    y-axis "Yuzde Puan" 0 --> 2.2
+    bar [0.443, 1.155, 1.868, 1.000]
+```
 
-Modeldeki veriler analiz sonuçlarının gömülü snapshot'ıdır. Refresh analizi/SQL'i/deneyi/modeli yeniden çalıştırmaz. Güncelleme için kaynak analiz yeniden çalıştırılıp rapor yeniden üretilmelidir.
-
-`data/` klasöründe modele aktarılan tablolar vardır. `CHECKS.json` beklenen kart değerlerini ve yapılan kontrolleri içerir. Snapshot değerleri rapor filtreleriyle aynı popülasyonda karşılaştırılmalıdır.
-
-Önceki analiz ve kaynak kodu: `07_ab_conversion/`.
-
-Belirsizlik içeren raporlarda %95 güven aralıkları ilgili tablolarda görünür. Sentetik raporlar gerçek kampanya etkisi değildir. Eşik/kalibrasyon tabloları önceden hesaplanmıştır; rapor içinde model eğitimi veya yeniden test yapılmaz.
+## 📁 Klasör Bileşenleri
+- `dashboard.png`: Yüksek çözünürlüklü Power BI gösterge paneli çıktısı
+- `data/`: Modele aktarılan CSV veri tabloları
+- `analysis_evidence/`: `METHOD.md`, `RESULTS.md` ve `summary.json` kanıt dosyaları
+- `CHECKS.json`: Beklenen KPI kart değerleri ve şema doğrulama sonuçları
+- `07_AB_Donusum.pbip`, `07_AB_Donusum.Report/`, `07_AB_Donusum.SemanticModel/`: Power BI proje ve veri modeli dosyaları
