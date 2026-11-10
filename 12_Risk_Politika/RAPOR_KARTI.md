@@ -1,17 +1,25 @@
-# Risk politikası ve stres
+# 📊 12_Risk_Politika — Risk politikası ve stres
 
-**Durum:** Power BI proje taslağı. Power BI Desktop'ta açılmadı; M/DAX ve görseller çalışma zamanında doğrulanmadı.
+![12_Risk_Politika Power BI Dashboard Görseli](dashboard.png)
 
-**Kapsam:** 11 ile aynı Taiwan verisi • FN=5, FP=1 varsayımı • İnceleme kapasitesi ve gerçek EAD/LGD yok.
+## 📌 Proje Özeti ve KPI Doğrulaması (`CHECKS.json` & `RESULTS.md`)
+- **Veri Kaynağı ve Kapsam:** Taiwan Model Çıktıları (2 Sayfa)
+- **Temel KPI ve Doğrulama Bulgusu:** 18k/3k/3k/6k bölünme; seçilen eşik 0.17 ile %38.07 inceleme payı ve 0.5985 müşteri başı maliyet vekili (incelemesiz: 1.1058, tümü: 0.7788). Stres altında ort. PD: 0.2180 → 0.3491.
+- **Analitik Karar Kuralı:** Gerçek FN/FP maliyetleri ve operasyonel inceleme kapasitesi doğrulanmadan bu eşik üretime taşınmamalıdır.
 
-**Kaynak:** UCI Taiwan; 12_risk_policy çıktıları. 11 ile aynı veri/split, bağımsız yeni doğrulama değildir.
+## 📈 Etkileşimli Grafik Görünümü (GitHub Mermaid)
 
-**Yorum ve sınır:** Stres özellik değişimi senaryosudur. Validation eğrisinde bir nokta seçmek test eşiğini yeniden hesaplamaz. Kalibrasyon burada Brier’ı iyileştirmedi.
+```mermaid
+xychart-beta
+    title "12_Risk_Politika: Karar Politikalarina Gore Musteri Basi Maliyet Vekili"
+    x-axis ["Hic Inceleme Yok", "Herkesi Incele", "Secilen Esik (0.17)"]
+    y-axis "Maliyet Vekili" 0 --> 1.20
+    bar [1.1058, 0.7788, 0.5985]
+```
 
-Modeldeki veriler analiz sonuçlarının gömülü snapshot'ıdır. Refresh analizi/SQL'i/deneyi/modeli yeniden çalıştırmaz. Güncelleme için kaynak analiz yeniden çalıştırılıp rapor yeniden üretilmelidir.
-
-`data/` klasöründe modele aktarılan tablolar vardır. `CHECKS.json` beklenen kart değerlerini ve yapılan kontrolleri içerir. Snapshot değerleri rapor filtreleriyle aynı popülasyonda karşılaştırılmalıdır.
-
-Önceki analiz ve kaynak kodu: `12_risk_policy/`.
-
-Belirsizlik içeren raporlarda %95 güven aralıkları ilgili tablolarda görünür. Sentetik raporlar gerçek kampanya etkisi değildir. Eşik/kalibrasyon tabloları önceden hesaplanmıştır; rapor içinde model eğitimi veya yeniden test yapılmaz.
+## 📁 Klasör Bileşenleri
+- `dashboard.png`: Yüksek çözünürlüklü Power BI gösterge paneli çıktısı
+- `data/`: Modele aktarılan CSV veri tabloları
+- `analysis_evidence/`: `METHOD.md`, `RESULTS.md` ve `summary.json` kanıt dosyaları
+- `CHECKS.json`: Beklenen KPI kart değerleri ve şema doğrulama sonuçları
+- `12_Risk_Politika.pbip`, `12_Risk_Politika.Report/`, `12_Risk_Politika.SemanticModel/`: Power BI proje ve veri modeli dosyaları
